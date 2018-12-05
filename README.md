@@ -43,7 +43,8 @@ exports.googleTranslate = {
 ```js
 // {app_root}/config/config.default.js
 exports.googleTranslate = {
-  key: {YOUR_API_KEY}
+  key: {YOUR_API_KEY}, // Google Translation API
+  hacked: boolean, // 是否开启Hacked，开启则翻译接口可以免费试用，忽略Key
 };
 ```
 
@@ -51,9 +52,9 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## API
 ```
-this.app.translation.translate
-this.app.translation.detect
-this.app.translation.getLanguages
+this.app.translation.translate(text, target)
+this.app.translation.detect(text)
+this.app.translation.getLanguages()
 ```
 
 ## Example

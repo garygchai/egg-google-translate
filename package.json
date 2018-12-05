@@ -8,10 +8,13 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "egg-google-translate"
   ],
   "dependencies": {
-    "@google-cloud/translate": "^2.1.2"
+    "@google-cloud/translate": "^2.1.2",
+    "axios": "^0.18.0",
+    "querystring": "^0.2.0"
   },
   "devDependencies": {
     "autod": "^3.0.0",
@@ -37,21 +40,20 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
-    "config"
+    "config",
+    "app.js"
   ],
   "ci": {
     "version": "8, 9"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-google-translate.git"
+    "url": "git+https://github.com/garygchai/egg-google-translate.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
   "homepage": "https://github.com/eggjs/egg-google-translate#readme",
-  "author": "",
+  "author": "garygchai",
   "license": "MIT"
 }
